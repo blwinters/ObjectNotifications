@@ -17,7 +17,6 @@ class ObjectNotificationManager {
     var objectNotificationTokens: [String: NotificationToken] = [:]
     
     deinit {
-        
         for token in objectNotificationTokens.values {
             token.invalidate()
         }
@@ -26,7 +25,7 @@ class ObjectNotificationManager {
         }
     }
     
-    func realmObjectClass(name: String) -> Object.Type {
+    private func realmObjectClass(name: String) -> Object.Type {
         
         if let objClass = NSClassFromString(name) {
             return objClass as! Object.Type
@@ -37,6 +36,7 @@ class ObjectNotificationManager {
     }
     
     func setup() {
+        let start = Date()
         
         for schema in realm.schema.objectSchema {
             
@@ -81,7 +81,12 @@ class ObjectNotificationManager {
                 
                 objectNotificationTokens[identifier] = token
             }
-        }        
+        }
+        
+        let end = Date()
+        
+        let duration = end.timeIntervalSince(start)
+        print("Created tokens in \(duration) seconds")
     }
     
 }
