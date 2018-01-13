@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B495C0B479165C755AB3EA71 /* Pods_ObjectNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB89C90C2B40E8D0301B498 /* Pods_ObjectNotifications.framework */; };
 		B5116765200AC41400D9D159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5116764200AC41400D9D159 /* AppDelegate.swift */; };
 		B5116767200AC41400D9D159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5116766200AC41400D9D159 /* ViewController.swift */; };
 		B511676A200AC41400D9D159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5116768200AC41400D9D159 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088587955F2D2C29363C223E /* Pods-ObjectNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectNotifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		B5116761200AC41400D9D159 /* ObjectNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5116764200AC41400D9D159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5116766200AC41400D9D159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B511676B200AC41400D9D159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B511676E200AC41400D9D159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5116770200AC41400D9D159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26E990C8ACBFC3B25464483 /* Pods-ObjectNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectNotifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications.release.xcconfig"; sourceTree = "<group>"; };
+		FBB89C90C2B40E8D0301B498 /* Pods_ObjectNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B495C0B479165C755AB3EA71 /* Pods_ObjectNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2812413B04BA07BEC4CBD7E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB89C90C2B40E8D0301B498 /* Pods_ObjectNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5116758200AC41400D9D159 = {
 			isa = PBXGroup;
 			children = (
 				B5116763200AC41400D9D159 /* ObjectNotifications */,
 				B5116762200AC41400D9D159 /* Products */,
+				EAB1E320F4F9DE6C99599136 /* Pods */,
+				2812413B04BA07BEC4CBD7E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = ObjectNotifications;
 			sourceTree = "<group>";
 		};
+		EAB1E320F4F9DE6C99599136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				088587955F2D2C29363C223E /* Pods-ObjectNotifications.debug.xcconfig */,
+				D26E990C8ACBFC3B25464483 /* Pods-ObjectNotifications.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5116773200AC41400D9D159 /* Build configuration list for PBXNativeTarget "ObjectNotifications" */;
 			buildPhases = (
+				6E5907372C4CB162930E89FD /* [CP] Check Pods Manifest.lock */,
 				B511675D200AC41400D9D159 /* Sources */,
 				B511675E200AC41400D9D159 /* Frameworks */,
 				B511675F200AC41400D9D159 /* Resources */,
+				31172DF5ECE6D4B6F6BDE51D /* [CP] Embed Pods Frameworks */,
+				F47E4A8CEB2FA224670FA6F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31172DF5ECE6D4B6F6BDE51D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5907372C4CB162930E89FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectNotifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47E4A8CEB2FA224670FA6F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B511675D200AC41400D9D159 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		B5116774200AC41400D9D159 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088587955F2D2C29363C223E /* Pods-ObjectNotifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		B5116775200AC41400D9D159 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26E990C8ACBFC3B25464483 /* Pods-ObjectNotifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
