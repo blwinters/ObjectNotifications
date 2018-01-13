@@ -13,6 +13,10 @@
 		B511676A200AC41400D9D159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5116768200AC41400D9D159 /* Main.storyboard */; };
 		B511676C200AC41400D9D159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B511676B200AC41400D9D159 /* Assets.xcassets */; };
 		B511676F200AC41400D9D159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B511676D200AC41400D9D159 /* LaunchScreen.storyboard */; };
+		B5116777200AC5A800D9D159 /* ONList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5116776200AC5A800D9D159 /* ONList.swift */; };
+		B5116779200AC60E00D9D159 /* ONItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5116778200AC60E00D9D159 /* ONItem.swift */; };
+		B511677B200AC7F100D9D159 /* ObjectNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511677A200AC7F100D9D159 /* ObjectNotificationManager.swift */; };
+		B511677D200AC85C00D9D159 /* ObjectGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511677C200AC85C00D9D159 /* ObjectGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B511676B200AC41400D9D159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B511676E200AC41400D9D159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5116770200AC41400D9D159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5116776200AC5A800D9D159 /* ONList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONList.swift; sourceTree = "<group>"; };
+		B5116778200AC60E00D9D159 /* ONItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONItem.swift; sourceTree = "<group>"; };
+		B511677A200AC7F100D9D159 /* ObjectNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectNotificationManager.swift; sourceTree = "<group>"; };
+		B511677C200AC85C00D9D159 /* ObjectGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectGenerator.swift; sourceTree = "<group>"; };
 		D26E990C8ACBFC3B25464483 /* Pods-ObjectNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectNotifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectNotifications/Pods-ObjectNotifications.release.xcconfig"; sourceTree = "<group>"; };
 		FBB89C90C2B40E8D0301B498 /* Pods_ObjectNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +79,10 @@
 			children = (
 				B5116764200AC41400D9D159 /* AppDelegate.swift */,
 				B5116766200AC41400D9D159 /* ViewController.swift */,
+				B5116776200AC5A800D9D159 /* ONList.swift */,
+				B5116778200AC60E00D9D159 /* ONItem.swift */,
+				B511677A200AC7F100D9D159 /* ObjectNotificationManager.swift */,
+				B511677C200AC85C00D9D159 /* ObjectGenerator.swift */,
 				B5116768200AC41400D9D159 /* Main.storyboard */,
 				B511676B200AC41400D9D159 /* Assets.xcassets */,
 				B511676D200AC41400D9D159 /* LaunchScreen.storyboard */,
@@ -221,6 +233,10 @@
 			files = (
 				B5116767200AC41400D9D159 /* ViewController.swift in Sources */,
 				B5116765200AC41400D9D159 /* AppDelegate.swift in Sources */,
+				B5116777200AC5A800D9D159 /* ONList.swift in Sources */,
+				B5116779200AC60E00D9D159 /* ONItem.swift in Sources */,
+				B511677D200AC85C00D9D159 /* ObjectGenerator.swift in Sources */,
+				B511677B200AC7F100D9D159 /* ObjectNotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
