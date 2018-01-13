@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         objectGenerator = ObjectGenerator()
         objectNotificationManager = ObjectNotificationManager()
         
+        objectGenerator.createObjectsIfNeeded {
+            print("Finished creating objects")
+        }
+        
         return true
     }
 
