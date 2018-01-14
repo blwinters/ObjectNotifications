@@ -45,7 +45,7 @@ class ObjectNotificationManager {
             let results = realm.objects(objectClass)
             
             // Register for collection notifications
-            let token = results.observe({ [weak self] (collectionChange) in
+            let token = results.observe({ (collectionChange) in //[weak self]
                 
                 switch collectionChange {
                 case .update(_, _, let insertions, _):
@@ -65,7 +65,7 @@ class ObjectNotificationManager {
             for object in results {
                 
                 let identifier = object.value(forKey: primaryKey) as! String
-                let token = object.observe({ [weak self] (change) in
+                let token = object.observe({ (change) in //[weak self]
                     
                     switch change {
                     case .change(let properties):
